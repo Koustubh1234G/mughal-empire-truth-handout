@@ -56,14 +56,14 @@ This handout challenges the mainstream, Marxist-whitewashed narrative.
 
 ## 📥 Download the Full Project
 
-📄 **[Download the Full PDF Handout](https://yourusername.github.io/mughal-empire-truth-handout/Mughal_Truth_Project.pdf)**  
-🌐 **[Read on GitHub Pages (Live Website)](https://yourusername.github.io/mughal-empire-truth-handout/)**
+📄 **[Download the Full PDF Handout](https://github.com/Koustubh1234G/mughal-empire-truth-handout/Mughal_Truth_Project.pdf)**  
+🌐 **[Read on GitHub Pages (Live Website)](https://Koustubh1234G.github.io/mughal-empire-truth-handout/)**
 
 ---
 
 ## 💬 Reader Feedback & Suggestions
 
-📝 **[Submit a Review or Suggestion](https://yourusername.github.io/mughal-empire-truth-handout/#reader-feedback)**  
+📝 **[Submit a Review or Suggestion](https://Koustubh1234G.github.io/mughal-empire-truth-handout/)**  
 🤝 **Want to contribute? Translate? Cite? Reach out.**
 
 ---
@@ -103,7 +103,7 @@ This handout is offered for:
 ## 📌 Citation Example
 
 > Dave, Koustubh. *Mughal Empire: A Chronicle of Cruelty, Courage & Concealed Truths*. GitHub, 2025.  
-> [https://github.com/yourusername/mughal-empire-truth-handout](https://github.com/yourusername/mughal-empire-truth-handout)
+> [https://github.com/Koustubh1234G/mughal-empire-truth-handout](https://github.com/Koustubh1234G/mughal-empire-truth-handout)
 
 ---
 
@@ -123,9 +123,9 @@ This handout is offered for:
 
 ## 🔗 Quick Links
 
-- 📥 [Download Full PDF](https://yourusername.github.io/mughal-empire-truth-handout/Mughal_Truth_Project.pdf)  
-- 🌐 [View Website](https://yourusername.github.io/mughal-empire-truth-handout/)  
-- 💬 [Submit Feedback](https://yourusername.github.io/mughal-empire-truth-handout/#reader-feedback)  
+- 📥 [Download Full PDF](https://Koustubh1234G.github.io/mughal-empire-truth-handout/Mughal_Truth_Project.pdf)  
+- 🌐 [View Website](https://Koustubh1234G.github.io/mughal-empire-truth-handout/)  
+- 💬 [Submit Feedback](https://Koustubh1234G.github.io/mughal-empire-truth-handout/)  
 - 🔗 [LinkedIn – Koustubh Dave](https://www.linkedin.com/in/koustubh-dave-0690131a1)
 
 ---
