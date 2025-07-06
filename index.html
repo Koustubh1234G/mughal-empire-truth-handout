@@ -14,7 +14,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Mughal Empire: A Chronicle of Cruelty, Courage & Concealed Truths" />
   <meta property="og:description" content="This is not whitewashed history. It’s a dharmic reconstruction of Bharat’s truth — from the burning of Nalanda to the tyranny of Aurangzeb, and the resistance of saints, kings, and Brahmins. Download the full project or read online." />
-  <meta property="og:image" content="cover.jpg" />
+  <meta property="og:image" content="https://github.com/Koustubh1234G/mughal-empire-truth-handout/blob/main/cover.jpg" />
   <meta property="og:url" content="https://koustubh1234g.github.io/mughal-empire-truth-handout/" />
   <meta property="og:type" content="website" />
   
@@ -22,7 +22,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mughal Empire: Truth, Courage & Concealed History">
   <meta name="twitter:description" content="This is not whitewashed history. It’s a dharmic reconstruction of Bharat’s truth — from the burning of Nalanda to the tyranny of Aurangzeb, and the resistance of saints, kings, and Brahmins. Download the full project or read online.">
-  <meta name="twitter:image" content="cover.jpg">
+  <meta name="twitter:image" content="https://github.com/Koustubh1234G/mughal-empire-truth-handout/blob/main/cover.jpg">
   
   <link rel="me" href="https://www.linkedin.com/in/koustubh-dave-0690131a1">
 
@@ -72,7 +72,7 @@
       padding-left: 0.5rem;
     }
 
-    a.button, .button {
+    a.button, .button, button {
       display: inline-block;
       margin: 1rem 1rem 1rem 0;
       padding: 0.75rem 1.5rem;
@@ -101,6 +101,38 @@
 	  margin-bottom: 0.25rem;
 	  color: #7a0606;
 	}
+	
+	.share-sidebar {
+	  position: fixed;
+	  top: 40%;
+	  
+	  right: 0;
+	  left: auto;
+
+	  transform: translateY(-50%);
+	  z-index: 999;
+	  display: flex;
+	  flex-direction: column;
+	  gap: 10px;
+	}
+	.share-icon {
+	  background-color: #7a0606;
+	  color: white;
+	  font-size: 1.2rem;
+	  padding: 0.6rem;
+	  text-align: center;
+	  border-radius: 5px 0 0 5px;
+	  text-decoration: none;
+	}
+	@media (max-width: 600px) {
+	  .share-sidebar {
+		top: auto;
+		bottom: 10px;
+		left: 10px;
+		flex-direction: row;
+	  }
+	}
+
 
 
     footer {
@@ -143,6 +175,8 @@
 	  "url": "https://koustubh1234g.github.io/mughal-empire-truth-handout//"
 	}
    </script>
+   
+
 
 </head>
 <body>
@@ -188,8 +222,8 @@
 
     <section>
       <h2>📂 Download & Source</h2>
-      <a href="Mughal_Truth_Project.pdf" class="button">Download Full Project PDF</a>
-      <a href="https://github.com/Koustubh1234G/mughal-empire-truth-handout" class="button" target="_blank">View Source on GitHub</a>
+	  <a href="Mughal_Truth_Project.pdf" class="button trackable" data-track="download-pdf">Download Full Project PDF</a>
+      <a href="https://github.com/Koustubh1234G/mughal-empire-truth-handout" class="button trackable" data-track="view-github-source">View Source on GitHub</a>
     </section>
 
     <section>
@@ -199,10 +233,40 @@
     </section>
 	
 	<section>
+	  <h2>🔗 Share This Handout</h2>
+	  <p>Spread the truth and awaken others. Share with friends, scholars, and seekers.</p>
+
+	  <a href="https://api.whatsapp.com/send?text=Discover the true history of the Mughal Empire – https://koustubh1234g.github.io/mughal-empire-truth-handout/?src=whatsapp"
+		 class="button trackable" data-track="share-whatsapp" target="_blank">WhatsApp</a>
+
+	  <a href="https://t.me/share/url?url=https://koustubh1234g.github.io/mughal-empire-truth-handout/?src=telegram&text=Read this powerful dharmic handout exposing NCERT lies and Mughal atrocities."
+		 class="button trackable" data-track="share-telegram" target="_blank">Telegram</a>
+
+	  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://koustubh1234g.github.io/mughal-empire-truth-handout/?src=linkedin"
+		 class="button trackable" data-track="share-linkedin" target="_blank">LinkedIn</a>
+
+	  <a href="https://twitter.com/intent/tweet?text=Read%20this%20powerful%20truth-based%20handout%20on%20the%20Mughal%20Empire%3A%20https%3A%2F%2Fkoustubh1234g.github.io%2Fmughal-empire-truth-handout%2F%3Fsrc%3Dtwitter"
+		 class="button trackable" data-track="share-twitter" target="_blank">Twitter (X)</a>
+
+	  <a href="https://www.facebook.com/sharer/sharer.php?u=https://koustubh1234g.github.io/mughal-empire-truth-handout/?src=facebook"
+		 class="button trackable" data-track="share-facebook" target="_blank">Facebook</a>
+
+	  <a href="mailto:?subject=Must%20Read%3A%20True%20History%20of%20Mughal%20Empire&body=Read%20this%20unapologetic%20history-based%20handout%3A%20https%3A%2F%2Fkoustubh1234g.github.io%2Fmughal-empire-truth-handout%2F%3Fsrc%3Demail"
+		 class="button trackable" data-track="share-email" target="_blank">Email</a>
+
+	  <a href="https://reddit.com/submit?url=https://koustubh1234g.github.io/mughal-empire-truth-handout/?src=reddit&title=Must%20Read%3A%20The%20Real%20History%20of%20Mughal%20Empire"
+		 class="button trackable" data-track="share-reddit" target="_blank">Reddit</a>
+
+	  <button class="button trackable" data-track="share-copylink" onclick="copyLink()">Copy Link</button>
+	</section>
+
+
+	
+	<section>
 	  <h2>📝 Submit Your Review</h2>
 	  <p>Read the handout? Share your thoughts, feedback, or suggestions. Your insights help sharpen the sword of truth.</p>
 
-	  <form action="https://formspree.io/f/xyzjvjqo" method="POST" style="max-width:600px;">
+	   <form action="https://formspree.io/f/xyzjvjqo" method="POST" style="max-width:600px;" onsubmit="goatcounter.count({ path: '/event/form-submit-review' });">
 		<label for="name">Your Name</label><br>
 		<input type="text" name="name" id="name" required style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br>
 
@@ -217,17 +281,80 @@
 	<section>
       <h2>🤝 Connect & Contribute</h2>
 	  <p>This handout is just the beginning. If you have corrections, suggestions, historical insights, or want to support this dharmic effort, reach out directly.</p>
-	  <p><a href="https://www.linkedin.com/in/koustubh-dave-0690131a1" target="_blank" class="button">Connect on LinkedIn</a></p>
+	  <p><a href="https://www.linkedin.com/in/koustubh-dave-0690131a1" target="_blank" class="button trackable" data-track="linkedin-connect">Connect on LinkedIn</a></p>
 	</section>
 
   </main>
+  
+	<div class="share-sidebar">
+	  <a href="https://api.whatsapp.com/send?text=..." class="share-icon trackable" data-track="share-whatsapp" target="_blank" title="Share on WhatsApp">📲</a>
+	  <a href="https://t.me/share/url?url=..." class="share-icon trackable" data-track="share-telegram" target="_blank" title="Share on Telegram">📣</a>
+	  <a href="https://www.linkedin.com/sharing/share-offsite/?url=..." class="share-icon trackable" data-track="share-linkedin" target="_blank" title="Share on LinkedIn">🔗</a>
+	  <a href="https://twitter.com/intent/tweet?text=..." class="share-icon trackable" data-track="share-twitter" target="_blank" title="Share on Twitter">🐦</a>
+	  <a href="#" onclick="copyFloatingLink()" class="share-icon" title="Copy Link">📋</a>
+	</div>
+
 
 	<footer>
 	  <p>
-		<strong>Mughal Empire: A Chronicle of Cruelty, Courage & Concealed Truths</strong> <br> It is a dharmic effort to expose the brutal history of the Mughal invasions, the cultural genocide of ancient Indian universities like Nalanda and Takshashila, and the suppression of Hindu resistance in modern NCERT textbooks. This handout revives forgotten warriors, Brahmin scholars, temple destruction records, and native accounts that were erased from India’s historical memory. Reclaim the truth of Bharat’s civilization. <a href="https://www.linkedin.com/in/koustubh-dave-0690131a1" target="_blank">Connect on LinkedIn</a> for citations, feedback, or collaboration.
+		<strong>Mughal Empire: A Chronicle of Cruelty, Courage & Concealed Truths</strong> <br> It is a dharmic effort to expose the brutal history of the Mughal invasions, the cultural genocide of ancient Indian universities like Nalanda and Takshashila, and the suppression of Hindu resistance in modern NCERT textbooks. This handout revives forgotten warriors, Brahmin scholars, temple destruction records, and native accounts that were erased from India’s historical memory. Reclaim the truth of Bharat’s civilization. <a href="https://www.linkedin.com/in/koustubh-dave-0690131a1" target="_blank" >Connect on LinkedIn</a> for citations, feedback, or collaboration.
 	  </p>
 	</footer>
+	
+	<!-- Copy link script -->
+	<script>
+	function copyLink() {
+	  const url = "https://koustubh1234g.github.io/mughal-empire-truth-handout/?src=copylink";
+	  navigator.clipboard.writeText(url).then(() => {
+		alert("Link copied to clipboard!");
+	  });
+	  if (window.goatcounter) {
+		goatcounter.count({ path: '/event/share-copylink' });
+	  }
+	}
+	</script>
+	
+	
+	<!-- Goatcount web Analytics --> <script data-goatcounter="https://bharatyatra.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 
 	<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b1467d7d9d4b412d9f8a4c171291fdb5"}'></script><!-- End Cloudflare Web Analytics -->
+	
+	<script>
+	document.addEventListener('DOMContentLoaded', () => {
+	  document.querySelectorAll('.trackable').forEach(el => {
+		el.addEventListener('click', () => {
+		  const path = el.getAttribute('data-track');
+		  if (path && window.goatcounter) {
+			goatcounter.count({ path: `/event/${path}` });
+		  }
+		});
+	  });
+	});
+	</script>
+
+	<script>
+		function copyLink() {
+		  const url = "https://koustubh1234g.github.io/mughal-empire-truth-handout/?src=copylink";
+		  navigator.clipboard.writeText(url).then(() => {
+			alert("Link copied to clipboard!");
+		  });
+		  if (window.goatcounter) {
+			goatcounter.count({ path: '/event/share-copylink' });
+		  }
+		}
+
+		function copyFloatingLink() {
+		  const url = "https://koustubh1234g.github.io/mughal-empire-truth-handout/?src=floating-copy";
+		  navigator.clipboard.writeText(url).then(() => {
+			alert("Link copied to clipboard!");
+		  });
+		  if (window.goatcounter) {
+			goatcounter.count({ path: '/event/floating-copy' });
+		  }
+		}
+	</script>
+
+	
 </body>
 </html>
