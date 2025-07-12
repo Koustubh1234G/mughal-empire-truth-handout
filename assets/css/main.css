@@ -1,0 +1,16 @@
+/* Main CSS file - imports all partials */
+@import url('base/_variables.css');
+@import url('base/_reset.css');
+@import url('base/_typography.css');
+@import url('base/_base.css');
+
+@import url('components/_navigation.css');
+@import url('components/_hero.css');
+@import url('components/_cards.css');
+@import url('components/_quiz.css');
+@import url('components/_badges.css');
+@import url('components/_footer.css');
+@import url('components/_resources.css');
+@import url('components/_overview.css');
+@import url('components/_review.css');
+@import url('components/_consent-banner.css');

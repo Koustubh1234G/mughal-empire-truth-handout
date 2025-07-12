@@ -1,0 +1,244 @@
+/* Badge Container */
+#badges-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Badge Grid */
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual Badge */
+.badge {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Locked State */
+.badge.locked {
+  filter: grayscale(80%);
+  opacity: 0.7;
+}
+
+/* Unlocked State */
+.badge.unlocked {
+  border-top: 3px solid var(--dharmic-red);
+}
+
+/* Notification */
+.badge-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* BADGES STYLES */
+.badges-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.badges-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.badges-header h1 {
+  font-size: 2.5rem;
+  color: var(--dharmic-red);
+  margin-bottom: 0.5rem;
+}
+
+.badges-header p {
+  font-size: 1.2rem;
+  color: var(--ash-black);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.badge-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.badge-card.locked {
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.badge-card.unlocked {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.badge-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.badge-card.unlocked .badge-icon {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.badge-card h3 {
+  margin: 0.5rem 0;
+  color: var(--ash-black);
+}
+
+.badge-card p {
+  color: #666;
+  font-size: 0.9rem;
+  min-height: 40px;
+}
+
+.badge-meta {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.badge-lock {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--ash-black);
+  opacity: 0.7;
+}
+
+.rarity-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Rarity colors */
+.rarity-common .rarity-label { background: #b5b5b5; color: white; }
+.rarity-uncommon .rarity-label { background: #2ecc71; color: white; }
+.rarity-rare .rarity-label { background: #3498db; color: white; }
+.rarity-legendary .rarity-label { background: #f39c12; color: white; }
+.rarity-mythic .rarity-label { background: #9b59b6; color: white; }
+
+/* Special effects for unlocked badges */
+.badge-card.unlocked.rarity-legendary {
+  border: 2px solid gold;
+  background: linear-gradient(135deg, #fff8e8, white);
+}
+
+.badge-card.unlocked.rarity-rare {
+  border: 2px solid #3498db;
+}
+
+/* Share button styles */
+.share-button {
+  background: var(--dharmic-red);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-button:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(192, 57, 43, 0.3);
+}
+
+.share-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Badge Notification Styles */
+.badge-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transform: translateX(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  max-width: 300px;
+}
+
+.badge-notification.fade-out {
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+.badge-notification-content {
+  text-align: center;
+}
+
+.badge-notification .badge-icon {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+/* Rarity colors */
+.rarity-common {
+  border-left: 5px solid #b5b5b5;
+}
+.rarity-uncommon {
+  border-left: 5px solid #2ecc71;
+}
+.rarity-rare {
+  border-left: 5px solid #3498db;
+}
+.rarity-legendary {
+  border-left: 5px solid #f39c12;
+  background: linear-gradient(135deg, #fff8e8, white);
+}

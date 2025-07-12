@@ -1,0 +1,39 @@
+.quiz-container {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.quiz-question {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.option {
+  display: block;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-left: 3px solid var(--saffron);
+  cursor: pointer;
+}
+
+.option:hover {
+  background: var(--parchment);
+}
+
+.quiz-result {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: var(--dharmic-red);
+  padding: 2rem;
+  text-align: center;
+}
