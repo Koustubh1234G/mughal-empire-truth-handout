@@ -1,0 +1,17 @@
+:root {
+  /* Core Palette */
+  --dharmic-red: #7a0606;  /* Blood of martyrs */
+  --saffron: #d4a017;      /* Bhagwa - Spiritual fire */
+  --ash-black: #111111;    /* Wisdom of ages */
+  --parchment: #fdf6ec;    /* Ancient manuscripts */
+  --kavi-brown: #4b2e2e;   /* Earth of Bharat */
+  
+  /* Emotional accents */
+  --anger: #9a1f1a;        /* For atrocities */
+  --courage: #d4a017;      /* For resistance */
+  --truth: #e8d5b5;        /* For revelations */
+
+    /* Fonts */
+  --english-font: 'Merriweather', serif;
+  --hindi-font: 'Noto Serif Devanagari', serif;
+}

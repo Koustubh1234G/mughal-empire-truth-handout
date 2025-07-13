@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Which library was burned during Islamic invasions?",
+    "options": ["Nalanda", "Oxford", "Benares", "Somnath"],
+    "answer": 0,
+    "explanation": "Nalanda University was destroyed by Bakhtiyar Khilji in 1193 CE, burning over 9 million manuscripts and killing thousands of Buddhist scholars."
+  },
+  {
+    "question": "Who re-imposed the jaziya tax after Akbar?",
+    "options": ["Shah Jahan", "Aurangzeb", "Babur", "Jahangir"],
+    "answer": 1,
+    "explanation": "Aurangzeb reinstated the discriminatory jaziya tax on non-Muslims in 1679, reversing Akbar's earlier abolition."
+  },
+  {
+    "question": "Which Indian king led fierce resistance against Mughals?",
+    "options": ["Rana Pratap", "Ashoka", "Chandragupta", "Vikramaditya"],
+    "answer": 0,
+    "explanation": "Maharana Pratap of Mewar fought the Mughals for decades, notably at the Battle of Haldighati (1576), refusing to surrender his sovereignty."
+  },
+  {
+    "question": "What was the Meena Bazaar?",
+    "options": ["A temple fair", "A scholarly debate", "A marketplace for women", "A place of Mughal entertainment"],
+    "answer": 3,
+    "explanation": "Meena Bazaar was a royal entertainment venue where Mughal women interacted with merchants behind screens, often during festivals."
+  },
+  {
+    "question": "What does 'dharmic resistance' include?",
+    "options": ["Scriptural rewriting", "Armed and spiritual struggle", "Evacuation", "Tax relief"],
+    "answer": 1,
+    "explanation": "Dharmic resistance combined guerrilla warfare (e.g., by Shivaji) with preservation of cultural identity through secret schools and rituals."
+  },
+  {
+    "question": "Which Mughal emperor executed Guru Tegh Bahadur?",
+    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Humayun"],
+    "answer": 2,
+    "explanation": "Aurangzeb beheaded the Sikh Guru in 1675 for refusing to convert to Islam, sparking Sikh militarization."
+  },
+  {
+    "question": "What was the 'Fatwa-e-Alamgiri'?",
+    "options": ["A cookbook", "A legal code enforcing Sharia", "A poetry collection", "A tax reform"],
+    "answer": 1,
+    "explanation": "Compiled under Aurangzeb, this legal manual mandated Islamic punishments like stoning and amputations."
+  },
+  {
+    "question": "Which Rajput queen committed jauhar against Mughals?",
+    "options": ["Rani Lakshmibai", "Rani Padmini", "Ahilyabai Holkar", "Rani Durgavati"],
+    "answer": 1,
+    "explanation": "Legend states Rani Padmini of Chittor led mass self-immolation (jauhar) to avoid capture by Alauddin Khilji's forces in 1303."
+  },
+  {
+    "question": "What percentage of revenue did Mughals tax farmers?",
+    "options": ["10-20%", "30-50%", "5-10%", "60-75%"],
+    "answer": 1,
+    "explanation": "The zabt system extracted 30-50% of agricultural produce, causing frequent peasant revolts."
+  },
+  {
+    "question": "Which Mughal prince rebelled against Aurangzeb?",
+    "options": ["Dara Shukoh", "Salim", "Kam Baksh", "Khurram"],
+    "answer": 0,
+    "explanation": "Dara Shukoh, a syncretic scholar, was executed by Aurangzeb in 1659 after losing the succession war."
+  },
+  {
+    "question": "What happened to Hindu temples under Shah Jahan?",
+    "options": ["All were protected", "Many were demolished", "Converted to museums", "Taxed lightly"],
+    "answer": 1,
+    "explanation": "Shah Jahan destroyed dozens of temples, including the Kesava Deo temple in Mathura, to build mosques."
+  },
+  {
+    "question": "Which Maratha general defeated Aurangzeb?",
+    "options": ["Shivaji", "Sambhaji", "Bajirao I", "Rajaram"],
+    "answer": 2,
+    "explanation": "Peshwa Bajirao I defeated Mughals at Palkhed (1728) and Bhopal (1737), ending Aurangzeb's expansion."
+  },
+  {
+    "question": "What was 'sulh-i-kul'?",
+    "options": ["Universal tolerance policy", "A tax", "A battle tactic", "A Mughal dish"],
+    "answer": 0,
+    "explanation": "Akbar's short-lived 'universal peace' policy (1563-1579) abolished pilgrim taxes and allowed Hindu temples."
+  },
+  {
+    "question": "Which city was sacked by Babur in 1527?",
+    "options": ["Delhi", "Chittor", "Agra", "Vijayanagara"],
+    "answer": 1,
+    "explanation": "Babur massacred 30,000 Rajputs at Chittor after victory at Khanwa, as recorded in Baburnama."
+  },
+  {
+    "question": "Who wrote 'Tuzuk-i-Jahangiri'?",
+    "options": ["Jahangir", "Birbal", "Abul Fazl", "A court scribe"],
+    "answer": 0,
+    "explanation": "Jahangir's autobiography details his alcohol addiction and orders to execute Sikh leaders."
+  },
+  {
+    "question": "What was the 'Din-i-Ilahi'?",
+    "options": ["A new religion", "A tax reform", "A court ritual", "A military rank"],
+    "answer": 0,
+    "explanation": "Akbar's syncretic religion (1582) blended Islam and Hinduism but attracted fewer than 20 adherents."
+  },
+  {
+    "question": "Which Mughal emperor banned music?",
+    "options": ["Aurangzeb", "Jahangir", "Humayun", "Shah Jahan"],
+    "answer": 0,
+    "explanation": "Aurangzeb banned court music in 1668, driving musicians to seek patronage in Rajput courts."
+  },
+  {
+    "question": "What was 'jharokha darshan'?",
+    "options": ["Public executions", "Royal balcony appearances", "Tree planting", "Charity distribution"],
+    "answer": 1,
+    "explanation": "A propaganda tool where emperors appeared before commoners to project divinity, discontinued by Aurangzeb."
+  },
+  {
+    "question": "Who built the Red Fort in Delhi?",
+    "options": ["Akbar", "Shah Jahan", "Babur", "Sher Shah Suri"],
+    "answer": 1,
+    "explanation": "Shah Jahan constructed it (1639-1648) using forced labor; its walls were originally white limestone."
+  },
+  {
+    "question": "Which Portuguese traveler documented Mughal oppression?",
+    "options": ["Vasco da Gama", "Domingo Paes", "Niccolao Manucci", "Marco Polo"],
+    "answer": 2,
+    "explanation": "Manucci's 'Storia do Mogor' (1705) records peasant starvation under Aurangzeb's excessive taxation."
+  },
+  {
+    "question": "What was 'zat' in the Mughal military?",
+    "options": ["Cavalry", "Infantry rank", "Elephant corps", "Naval unit"],
+    "answer": 1,
+    "explanation": "The zat system determined an officer's salary and troops, favoring Persians over Indian Muslims."
+  },
+  {
+    "question": "Which Sikh guru built the Akal Takht?",
+    "options": ["Guru Nanak", "Guru Gobind Singh", "Guru Arjan", "Guru Tegh Bahadur"],
+    "answer": 2,
+    "explanation": "Guru Arjan constructed it in 1606 as a seat of Sikh sovereignty, defying Mughal authority."
+  },
+  {
+    "question": "What ended the Mughal-Maratha wars?",
+    "options": ["Treaty of Purandar", "Battle of Panipat", "British mediation", "Maratha victory"],
+    "answer": 3,
+    "explanation": "The Marathas captured Delhi in 1752 after defeating Mughals at Sikandarabad (1750)."
+  },
+  {
+    "question": "Which Mughal queen owned ships?",
+    "options": ["Nur Jahan", "Mumtaz Mahal", "Jahanara", "Roshanara"],
+    "answer": 0,
+    "explanation": "Nur Jahan monopolized trade routes with her merchant fleet, violating Islamic norms of the time."
+  },
+  {
+    "question": "What was 'madad-i-maash'?",
+    "options": ["Land grants to scholars", "Slave markets", "Religious courts", "Palace guards"],
+    "answer": 0,
+    "explanation": "Tax-free land given to Muslim clerics, often by demolishing existing Hindu temples on the sites."
+  }
+]

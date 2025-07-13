@@ -1,0 +1,104 @@
+/* Overview Section */
+.dharmic-section {
+  padding: 4rem 1rem;
+  background-color: var(--parchment);
+}
+
+.overview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.overview-content {
+  text-align: center;
+}
+
+.overview-content .hindi {
+  font-family: var(--hindi-font);
+  font-size: 2.2rem;
+  color: var(--dharmic-red);
+  margin-bottom: 0.5rem;
+}
+
+.overview-content .english {
+  font-size: 1.8rem;
+  color: var(--kavi-brown);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.overview-content .english::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--saffron);
+}
+
+
+.overview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1000px;
+}
+
+.overview-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px solid var(--saffron);
+}
+
+.overview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.overview-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.overview-card h3 {
+  color: var(--dharmic-red);
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 2rem auto;
+  }
+  
+  .overview-content .hindi {
+    font-size: 1.8rem;
+  }
+  
+  .overview-content .english {
+    font-size: 1.5rem;
+  }
+  
+  .overview-card {
+    padding: 1.5rem;
+    min-height: 150px;
+  }
+}
