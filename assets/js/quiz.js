@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     highScoreElement.innerHTML = `High Score: <span>${highScore}%</span>`;
     
     // Load quiz data
-    const response = await fetch(window.BASE_PATH + '/_data/quiz.json');
+    const response = await fetch('/_data/quiz.json');
     if (!response.ok) throw new Error('Failed to load quiz data');
     const allQuestions = await response.json();
     

@@ -11,7 +11,7 @@ class BadgeManager {
 
   async loadBadges() {
     try {
-      const response = await fetch(window.BASE_PATH + '/_data/badges.json');
+      const response = await fetch('/_data/badges.json');
       this.badges = await response.json();
     } catch (error) {
       console.error("Couldn't load badges", error);
