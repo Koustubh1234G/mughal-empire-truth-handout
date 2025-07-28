@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <title>Mughal Empire Truth Quiz | Test Your Knowledge of Bharat's True History</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Test your knowledge of Bharat's true history with this quiz exposing Mughal atrocities and Hindu resistance. Challenge NCERT narratives and reclaim your heritage." />
+  <meta name="keywords" content="Mughal Empire quiz, Hindu resistance test, NCERT lies quiz, Bharat history challenge, Dharmic knowledge test, Mughal truth questions, Hindu warriors quiz, Sanatan civilization test" />
+  <meta name="author" content="Koustubh Dave" />
+
+  <!-- Favicon + Fonts -->
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+    /* Navigation Styles */
+    .simple-nav {
+      background: var(--dharmic-red);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    
+    .simple-nav a {
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    
+    .simple-nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      text-decoration: none;
+    }
+    
+    /* Quiz Specific Styles */
+    .quiz-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .quiz-progress {
+      height: 10px;
+      background: #e0e0e0;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    
+    .quiz-progress-bar {
+      height: 100%;
+      background: var(--dharmic-red);
+      border-radius: 5px;
+      transition: width 0.3s ease;
+    }
+    
+    .quiz-progress-text {
+      position: absolute;
+      right: 0;
+      top: -25px;
+      font-size: 0.9rem;
+      color: var(--kavi-brown);
+    }
+    
+    .question-container {
+      background: var(--parchment);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    
+    .question-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: var(--dharmic-red);
+    }
+    
+    .options-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .option {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .option:hover {
+      background: #f5f5f5;
+    }
+    
+    .option.selected {
+      background: var(--dharmic-red);
+      color: white;
+      border-color: var(--dharmic-red);
+    }
+    
+    .option.correct {
+      background: #2e7d32;
+      color: white;
+      border-color: #2e7d32;
+    }
+    
+    .option.incorrect {
+      background: #c62828;
+      color: white;
+      border-color: #c62828;
+    }
+    
+    .quiz-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+    
+    .explanation {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #f3f1ec;
+      border-left: 4px solid var(--saffron);
+      display: none;
+    }
+    
+    .results-container {
+      text-align: center;
+      padding: 2rem;
+      display: none;
+    }
+    
+    .score-display {
+      font-size: 2rem;
+      color: var(--dharmic-red);
+      margin: 1rem 0;
+    }
+    
+    .badge-earned {
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+    
+    .review-answers {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    
+    .review-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .review-question {
+      font-weight: bold;
+      color: var(--dharmic-red);
+    }
+    
+    .review-answer {
+      margin-top: 0.5rem;
+    }
+    
+    .correct-answer {
+      color: #2e7d32;
+    }
+    
+    .incorrect-answer {
+      color: #c62828;
+    }
+    
+    .share-results {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    @media (max-width: 600px) {
+      .quiz-container {
+        padding: 1rem;
+      }
+      
+      .question-container {
+        padding: 1rem;
+      }
+      
+      .quiz-navigation {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .quiz-navigation button {
+        width: 100%;
+      }
+      
+      .share-results {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .share-results button, 
+      .share-results a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="simple-nav">
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="badges.html">Badges</a>
+  </nav>
+
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <h1>Mughal Truth Challenge</h1>
+      <p>Test your knowledge of Bharat's true history against NCERT distortions</p>
+    </div>
+    
+    <div class="quiz-progress">
+      <div class="quiz-progress-text" id="progressText">Question 1 of 25</div>
+      <div class="quiz-progress-bar" id="progressBar"></div>
+    </div>
+    
+    <div id="questionContainer" class="question-container">
+      <div class="question-text" id="questionText"></div>
+      <div class="options-container" id="optionsContainer"></div>
+      <div class="explanation" id="explanation"></div>
+      
+      <div class="quiz-navigation">
+        <button id="prevBtn" class="button" disabled>Previous</button>
+        <button id="nextBtn" class="button">Next</button>
+        <button id="submitBtn" class="button" style="display: none;">Submit Quiz</button>
+      </div>
+    </div>
+    
+    <div id="resultsContainer" class="results-container">
+      <h2>Quiz Results</h2>
+      <div class="score-display">Your Score: <span id="scoreDisplay">0</span>/<span id="totalQuestions">0</span></div>
+      <div class="badge-earned" id="badgeEarned">🏆</div>
+      <p id="resultMessage"></p>
+      
+      <div class="share-results">
+        <button id="shareBtn" class="button">Share Your Results</button>
+        <a href="index.html" class="button">Return Home</a>
+      </div>
+      
+      <div class="review-answers">
+        <h3>Review Answers</h3>
+        <div id="reviewAnswers"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Quiz data embedded directly to avoid CORS issues
+    const quizData = [
+      {
+        "question": "Which library was burned during Islamic invasions?",
+        "options": ["Nalanda", "Oxford", "Benares", "Somnath"],
+        "answer": 0,
+        "explanation": "Nalanda University was destroyed by Bakhtiyar Khilji in 1193 CE, burning over 9 million manuscripts and killing thousands of Buddhist scholars."
+      },
+      {
+        "question": "Who re-imposed the jaziya tax after Akbar?",
+        "options": ["Shah Jahan", "Aurangzeb", "Babur", "Jahangir"],
+        "answer": 1,
+        "explanation": "Aurangzeb reinstated the discriminatory jaziya tax on non-Muslims in 1679, reversing Akbar's earlier abolition."
+      },
+      {
+        "question": "Which Indian king led fierce resistance against Mughals?",
+        "options": ["Rana Pratap", "Ashoka", "Chandragupta", "Vikramaditya"],
+        "answer": 0,
+        "explanation": "Maharana Pratap of Mewar fought the Mughals for decades, notably at the Battle of Haldighati (1576), refusing to surrender his sovereignty."
+      },
+      {
+        "question": "What was the Meena Bazaar?",
+        "options": ["A temple fair", "A scholarly debate", "A marketplace for women", "A place of Mughal entertainment"],
+        "answer": 3,
+        "explanation": "Meena Bazaar was a royal entertainment venue where Mughal women interacted with merchants behind screens, often during festivals."
+      },
+      {
+        "question": "What does 'dharmic resistance' include?",
+        "options": ["Scriptural rewriting", "Armed and spiritual struggle", "Evacuation", "Tax relief"],
+        "answer": 1,
+        "explanation": "Dharmic resistance combined guerrilla warfare (e.g., by Shivaji) with preservation of cultural identity through secret schools and rituals."
+      },
+      {
+        "question": "Which Mughal emperor executed Guru Tegh Bahadur?",
+        "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Humayun"],
+        "answer": 2,
+        "explanation": "Aurangzeb beheaded the Sikh Guru in 1675 for refusing to convert to Islam, sparking Sikh militarization."
+      },
+      {
+        "question": "What was the 'Fatwa-e-Alamgiri'?",
+        "options": ["A cookbook", "A legal code enforcing Sharia", "A poetry collection", "A tax reform"],
+        "answer": 1,
+        "explanation": "Compiled under Aurangzeb, this legal manual mandated Islamic punishments like stoning and amputations."
+      },
+      {
+        "question": "Which Rajput queen committed jauhar against Mughals?",
+        "options": ["Rani Lakshmibai", "Rani Padmini", "Ahilyabai Holkar", "Rani Durgavati"],
+        "answer": 1,
+        "explanation": "Legend states Rani Padmini of Chittor led mass self-immolation (jauhar) to avoid capture by Alauddin Khilji's forces in 1303."
+      },
+      {
+        "question": "What percentage of revenue did Mughals tax farmers?",
+        "options": ["10-20%", "30-50%", "5-10%", "60-75%"],
+        "answer": 1,
+        "explanation": "The zabt system extracted 30-50% of agricultural produce, causing frequent peasant revolts."
+      },
+      {
+        "question": "Which Mughal prince rebelled against Aurangzeb?",
+        "options": ["Dara Shukoh", "Salim", "Kam Baksh", "Khurram"],
+        "answer": 0,
+        "explanation": "Dara Shukoh, a syncretic scholar, was executed by Aurangzeb in 1659 after losing the succession war."
+      }
+      // Additional questions can be added here if needed
+    ];
+
+    // Quiz state
+    let shuffledQuestions = [];
+    let currentQuestion = 0;
+    let userAnswers = [];
+    let score = 0;
+    
+    // DOM elements
+    const questionText = document.getElementById('questionText');
+    const optionsContainer = document.getElementById('optionsContainer');
+    const explanation = document.getElementById('explanation');
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const submitBtn = document.getElementById('submitBtn');
+    const questionContainer = document.getElementById('questionContainer');
+    const resultsContainer = document.getElementById('resultsContainer');
+    const scoreDisplay = document.getElementById('scoreDisplay');
+    const totalQuestions = document.getElementById('totalQuestions');
+    const resultMessage = document.getElementById('resultMessage');
+    const reviewAnswers = document.getElementById('reviewAnswers');
+    const shareBtn = document.getElementById('shareBtn');
+    const badgeEarned = document.getElementById('badgeEarned');
+    
+    // Initialize quiz
+    function initQuiz() {
+      // Shuffle questions
+      shuffledQuestions = [...quizData];
+      shuffleArray(shuffledQuestions);
+      
+      // Limit to 10 questions for better user experience
+      shuffledQuestions = shuffledQuestions.slice(0, 10);
+      
+      totalQuestions.textContent = shuffledQuestions.length;
+      userAnswers = new Array(shuffledQuestions.length).fill(undefined);
+      showQuestion();
+    }
+    
+    // Fisher-Yates shuffle algorithm
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+    
+    // Display current question
+    function showQuestion() {
+      const question = shuffledQuestions[currentQuestion];
+      questionText.textContent = `${currentQuestion + 1}. ${question.question}`;
+      
+      // Update progress bar and text
+      progressBar.style.width = `${((currentQuestion + 1) / shuffledQuestions.length) * 100}%`;
+      progressText.textContent = `Question ${currentQuestion + 1} of ${shuffledQuestions.length}`;
+      
+      // Clear previous options
+      optionsContainer.innerHTML = '';
+      
+      // Add new options
+      question.options.forEach((option, index) => {
+        const optionElement = document.createElement('div');
+        optionElement.classList.add('option');
+        optionElement.textContent = option;
+        
+        // Check if user has already selected this option
+        if (userAnswers[currentQuestion] === index) {
+          optionElement.classList.add('selected');
+        }
+        
+        optionElement.addEventListener('click', () => selectOption(index));
+        optionsContainer.appendChild(optionElement);
+      });
+      
+      // Show explanation if available and user has answered
+      if (userAnswers[currentQuestion] !== undefined) {
+        showExplanation();
+      } else {
+        explanation.style.display = 'none';
+      }
+      
+      // Update navigation buttons
+      prevBtn.disabled = currentQuestion === 0;
+      nextBtn.disabled = false;
+      submitBtn.style.display = currentQuestion === shuffledQuestions.length - 1 ? 'inline-block' : 'none';
+    }
+    
+    // Select an option
+    function selectOption(index) {
+      // Remove selected class from all options
+      document.querySelectorAll('.option').forEach(option => {
+        option.classList.remove('selected');
+      });
+      
+      // Add selected class to clicked option
+      optionsContainer.children[index].classList.add('selected');
+      
+      // Store user's answer
+      userAnswers[currentQuestion] = index;
+      
+      // Show explanation
+      showExplanation();
+    }
+    
+    // Show explanation for current question
+    function showExplanation() {
+      if (userAnswers[currentQuestion] !== undefined) {
+        const question = shuffledQuestions[currentQuestion];
+        explanation.textContent = question.explanation;
+        explanation.style.display = 'block';
+        
+        // Highlight correct/incorrect answers if showing results
+        if (resultsContainer.style.display === 'block') {
+          const selectedOption = userAnswers[currentQuestion];
+          const correctOption = question.answer;
+          
+          // Highlight correct answer
+          optionsContainer.children[correctOption].classList.add('correct');
+          
+          // Highlight incorrect answer if wrong
+          if (selectedOption !== correctOption) {
+            optionsContainer.children[selectedOption].classList.add('incorrect');
+          }
+        }
+      }
+    }
+    
+    // Navigate to previous question
+    prevBtn.addEventListener('click', () => {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        showQuestion();
+      }
+    });
+    
+    // Navigate to next question
+    nextBtn.addEventListener('click', () => {
+      if (currentQuestion < shuffledQuestions.length - 1) {
+        currentQuestion++;
+        showQuestion();
+      }
+    });
+    
+    // Submit quiz
+    submitBtn.addEventListener('click', showResults);
+    
+    // Show quiz results
+    function showResults() {
+      // Calculate score
+      score = 0;
+      shuffledQuestions.forEach((question, index) => {
+        if (userAnswers[index] === question.answer) {
+          score++;
+        }
+      });
+      
+      // Display score
+      scoreDisplay.textContent = score;
+      
+      // Display result message
+      const percentage = (score / shuffledQuestions.length) * 100;
+      let message = '';
+      let badge = '';
+      
+      if (percentage >= 90) {
+        message = 'Dhanyavaad! You have exceptional knowledge of Bharat\'s true history. Share this wisdom!';
+        badge = '🕉️';
+      } else if (percentage >= 70) {
+        message = 'Well done! You know more than NCERT teaches. Keep learning our true history.';
+        badge = '📜';
+      } else if (percentage >= 50) {
+        message = 'Good effort! You have some knowledge but there\'s more to uncover about our heritage.';
+        badge = '🔍';
+      } else {
+        message = 'Time to rediscover Bharat\'s true history! Read our resources and try again.';
+        badge = '📚';
+      }
+      
+      resultMessage.textContent = message;
+      badgeEarned.textContent = badge;
+      
+      // Show review answers
+      reviewAnswers.innerHTML = '';
+      shuffledQuestions.forEach((question, index) => {
+        const reviewItem = document.createElement('div');
+        reviewItem.classList.add('review-item');
+        
+        const reviewQuestion = document.createElement('div');
+        reviewQuestion.classList.add('review-question');
+        reviewQuestion.textContent = `${index + 1}. ${question.question}`;
+        
+        const userAnswer = document.createElement('div');
+        userAnswer.classList.add('review-answer');
+        userAnswer.innerHTML = `Your answer: <span class="${userAnswers[index] === question.answer ? 'correct-answer' : 'incorrect-answer'}">${question.options[userAnswers[index]]}</span>`;
+        
+        const correctAnswer = document.createElement('div');
+        correctAnswer.classList.add('review-answer');
+        correctAnswer.innerHTML = `Correct answer: <span class="correct-answer">${question.options[question.answer]}</span>`;
+        
+        const reviewExplanation = document.createElement('div');
+        reviewExplanation.classList.add('review-answer');
+        reviewExplanation.textContent = question.explanation;
+        
+        reviewItem.appendChild(reviewQuestion);
+        reviewItem.appendChild(userAnswer);
+        reviewItem.appendChild(correctAnswer);
+        reviewItem.appendChild(reviewExplanation);
+        reviewAnswers.appendChild(reviewItem);
+      });
+      
+      // Show results container
+      questionContainer.style.display = 'none';
+      resultsContainer.style.display = 'block';
+      
+      // Scroll to top
+      window.scrollTo(0, 0);
+    }
+    
+    // Share results
+    shareBtn.addEventListener('click', () => {
+      const shareText = `I scored ${score}/${shuffledQuestions.length} on the Mughal Truth Challenge! Test your knowledge of Bharat's true history: ${window.location.href}`;
+      
+      if (navigator.share) {
+        navigator.share({
+          title: 'Mughal Truth Challenge Results',
+          text: shareText,
+          url: window.location.href
+        }).catch(err => {
+          console.log('Error sharing:', err);
+          copyToClipboard(shareText);
+        });
+      } else {
+        copyToClipboard(shareText);
+      }
+    });
+    
+    // Copy to clipboard fallback
+    function copyToClipboard(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      
+      alert('Results copied to clipboard! Share it with others.');
+    }
+    
+    // Initialize the quiz when page loads
+    document.addEventListener('DOMContentLoaded', initQuiz);
+  </script>
+</body>
+</html>

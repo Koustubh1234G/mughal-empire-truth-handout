@@ -1,0 +1,422 @@
+/* ===================================
+🌐 FONT & ROOT COLORS
+=================================== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Noto+Serif+Devanagari&display=swap');
+
+:root {
+  --dharmic-red: #7a0606;
+  --kavi-brown: #4b2e2e;
+  --saffron: #d4a017;
+  --ash-black: #111111;
+  --parchment: #fdf6ec;
+  --offwhite: #fdfcfb;
+  --text-dark: #222;
+}
+
+/* ===================================
+🌐 GLOBAL
+=================================== */
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  background: var(--offwhite);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: 'Noto Serif Devanagari', serif;
+  color: var(--dharmic-red);
+  border-left: 4px solid var(--dharmic-red);
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+a {
+  color: var(--dharmic-red);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===================================
+🔺 Navigation
+=================================== */
+.simple-nav {
+      background: var(--dharmic-red);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    
+    .simple-nav a {
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    
+    .simple-nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      text-decoration: none;
+    }
+
+/* ===================================
+🔺 HEADER
+=================================== */
+header {
+  /* background: url('../assets/bg.jpg') center/cover no-repeat;
+  background-color: var(--ash-black); */
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+  
+  position: relative;
+  overflow: hidden; /* Ensures the blur doesn't leak outside */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/bg.jpg') center/cover no-repeat;
+  background-color: var(--ash-black); /* Fallback color */
+  filter: blur(5px); /* Adjust blur amount (3px-8px works well) */
+  z-index: -1; /* Places it behind the content */
+}
+
+/* Optional dark overlay for better text contrast */
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity (0.3-0.6) */
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ===================================
+🧱 LAYOUT
+=================================== */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+footer {
+  background: var(--ash-black);
+  color: #ccc;
+  padding: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ===================================
+📱 RESPONSIVE
+=================================== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .share-sidebar {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+	width: 14%;
+    flex-direction: row;
+  }
+}
+
+/* ===================================
+🎨 BUTTONS
+=================================== */
+a.button,
+.button,
+button {
+  display: inline-block;
+  margin: 1rem 1rem 1rem 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--dharmic-red);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+.button:hover,
+a.button:hover {
+  background: #5e0404;
+}
+
+/* ===================================
+✍️ FORM
+=================================== */
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--dharmic-red);
+}
+
+form input,
+form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background: #fff;
+  color: #111;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* ===================================
+🎖️ BADGES / POPUPS
+=================================== */
+.truth-badge-popup {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #fff;
+  border: 2px dashed var(--saffron);
+  padding: 1rem;
+  border-radius: 10px;
+  z-index: 9999;
+  animation: fadePop 0.7s ease;
+}
+
+@keyframes fadePop {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ============================
+🎖️ Badge Section
+============================ */
+.badge-preview-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+.badge-icon {
+  background: var(--parchment);
+  border: 2px solid var(--dharmic-red);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.badge-more {
+  font-size: 1rem;
+  color: var(--dharmic-red);
+  font-weight: bold;
+}
+
+/* ============================
+🪟 Fullscreen Badge Overlay
+============================ */
+.badge-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.badge-overlay.active {
+  display: flex;
+}
+
+.badge-gallery {
+  background: #fff;
+  color: #222;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.badge-gallery h3 {
+  margin-bottom: 1.5rem;
+  font-family: 'Noto Serif Devanagari', serif;
+  color: var(--dharmic-red);
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.5rem;
+}
+
+.badge-card {
+  background: var(--parchment);
+  border: 2px solid var(--saffron);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+.badge-card p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
+/* ===================================
+🔄 FLIP CARD
+=================================== */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  margin: 2rem 0;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.flip-card-front {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.flip-card-back {
+  background: #f3f1ec;
+  transform: rotateY(180deg);
+  color: var(--kavi-brown);
+}
+
+/* ===================================
+📌 STICKY CTA
+=================================== */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: var(--dharmic-red);
+  color: white;
+  font-weight: bold;
+  z-index: 999;
+}
+
+/* ===================================
+📲 SHARE SIDEBAR
+=================================== */
+.share-sidebar {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.share-icon {
+  background-color: var(--dharmic-red);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.share-icon:hover {
+  background-color: #5e0404;
+}
+
+/* ===================================
+🪔 SPECIAL STYLES
+=================================== */
+.dharmic-quote {
+  font-style: italic;
+  color: var(--kavi-brown);
+  font-family: 'Noto Serif Devanagari', serif;
+  background: var(--parchment);
+  padding: 1rem;
+  border-left: 4px solid var(--saffron);
+  margin: 1rem 0;
+}
