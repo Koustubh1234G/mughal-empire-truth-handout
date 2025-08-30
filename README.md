@@ -56,14 +56,14 @@ This handout challenges the mainstream, Marxist-whitewashed narrative.
 
 ## 📥 Download the Full Project
 
-📄 **[Download the Full PDF Handout](https://github.com/Koustubh1234G/mughal-empire-truth-handout/Mughal_Truth_Project.pdf)**  
-🌐 **[Read on GitHub Pages (Live Website)](https://Koustubh1234G.github.io/mughal-empire-truth-handout/)**
+📄 **[Download the Full PDF Handout](https://github.com/skandaShanmukha/mughal-empire-truth-handout/Mughal_Truth_Project.pdf)**  
+🌐 **[Read on GitHub Pages (Live Website)](https://skandaShanmukha.github.io/mughal-empire-truth-handout/)**
 
 ---
 
 ## 💬 Reader Feedback & Suggestions
 
-📝 **[Submit a Review or Suggestion](https://Koustubh1234G.github.io/mughal-empire-truth-handout/)**  
+📝 **[Submit a Review or Suggestion](https://skandaShanmukha.github.io/mughal-empire-truth-handout/)**  
 🤝 **Want to contribute? Translate? Cite? Reach out.**
 
 ---
@@ -81,7 +81,7 @@ This handout challenges the mainstream, Marxist-whitewashed narrative.
 
 ---
 
-## 🏷 GitHub Topics (for discoverability)
+## 🏷 GitHub Topics
 
 > Add these topics to your repo settings:  
 history, mughal-empire, hindu-history, dharmic-history, real-indian-history, ncert-lies, bharat, cultural-genocide, temple-history, akbar-exposed, aurangzeb
@@ -103,11 +103,11 @@ This handout is offered for:
 ## 📌 Citation Example
 
 > Dave, Koustubh. *Mughal Empire: A Chronicle of Cruelty, Courage & Concealed Truths*. GitHub, 2025.  
-> [https://github.com/Koustubh1234G/mughal-empire-truth-handout](https://github.com/Koustubh1234G/mughal-empire-truth-handout)
+> [https://github.com/skandaShanmukha/mughal-empire-truth-handout](https://github.com/skandaShanmukha/mughal-empire-truth-handout)
 
 ---
 
-## 🧭 Roadmap (Optional)
+## 🧭 Roadmap
 
 - [ ] Hindi & Sanskrit translations  
 - [ ] Infographic companion version  
@@ -123,10 +123,11 @@ This handout is offered for:
 
 ## 🔗 Quick Links
 
-- 📥 [Download Full PDF](https://Koustubh1234G.github.io/mughal-empire-truth-handout/Mughal_Truth_Project.pdf)  
-- 🌐 [View Website](https://Koustubh1234G.github.io/mughal-empire-truth-handout/)  
-- 💬 [Submit Feedback](https://Koustubh1234G.github.io/mughal-empire-truth-handout/)  
+- 📥 [Download Full PDF](https://skandaShanmukha.github.io/mughal-empire-truth-handout/Mughal_Truth_Project.pdf)  
+- 🌐 [View Website](https://skandaShanmukha.github.io/mughal-empire-truth-handout/)  
+- 💬 [Submit Feedback](https://skandaShanmukha.github.io/mughal-empire-truth-handout/)  
 - 🔗 [LinkedIn – Koustubh Dave](https://www.linkedin.com/in/koustubh-dave-0690131a1)
 
 ---
+
 
